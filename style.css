@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'permanent marker';
+    padding: 50px;
+    background-color: blueviolet;
+
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: goldenrod;
+}
+
+.game-board {
+    height: 450px;
+    width: 450px;
+    display: grid;
+    text-align: center;
+    margin: auto;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+}
+
+.game-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.game-square:hover {
+    background-color: goldenrod;
+}
+
+.game-square:nth-child(3n){
+    border-right: none;
+}
+.game-square:nth-child(n + 7){
+    border-bottom: none;
+}
+
+.inputName {
+    align-items: center;
+    text-align: center;
+}
